@@ -1,11 +1,5 @@
-# Add  code here!
-def prime?(int)
-  if int.between?(1,3)
-     true
-  end
-  if (int % 2) == 0
-     true
-  elsif (int % 3) == 0
-    true
-  end
+def is_prime?(num)
+  return false if num <= 1
+  Math.sqrt(num).to_i.downto(2).each {|i| return false if num % i == 0}
+  true
 end
