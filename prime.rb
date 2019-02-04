@@ -1,4 +1,4 @@
-require 'prime'
+
 
 def is_prime?(num)
   return false if num <= 1
